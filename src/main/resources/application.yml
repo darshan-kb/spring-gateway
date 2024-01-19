@@ -1,0 +1,12 @@
+spring.application.name: gateway-server
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "http://192.168.1.13:3006"
+            allowedHeaders: "*"
+            allowedMethods:
+              - GET
+              - POST
